@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingBottom="15dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/accountPhotoUrl"
+        android:layout_width="56dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/accountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Наука и техника"
+        android:textColor="#4a7cc7"
+        android:textSize="15sp"
+        app:fontFamily="@font/average_sans"
+        app:layout_constraintStart_toEndOf="@+id/accountPhotoUrl"
+        app:layout_constraintTop_toTopOf="@+id/accountPhotoUrl" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="21 февраля в 22:12:02"
+        android:textColor="#979899"
+        android:textSize="14sp"
+        app:fontFamily="@font/average_sans"
+        app:layout_constraintBottom_toBottomOf="@+id/accountPhotoUrl"
+        app:layout_constraintStart_toEndOf="@+id/accountPhotoUrl"
+        app:layout_constraintTop_toBottomOf="@+id/accountName"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <ImageView
+        android:id="@+id/postPhotoUrl"
+        android:layout_width="340dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="6dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newsText" />
+
+    <TextView
+        android:id="@+id/newsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="14dp"
+        android:text='Select the area inside the border by holding down and dragging the dotted lines with your left mouse button to crop the photo. When satisfied, press "OK." Remove the layer styling if cropping the photo does not remove the border.'
+        android:textColor="#979899"
+        android:textSize="15sp"
+        app:fontFamily="@font/average_sans"
+        app:layout_constraintStart_toStartOf="@+id/accountPhotoUrl"
+        app:layout_constraintTop_toBottomOf="@+id/accountPhotoUrl" />
+
+    <ImageView
+        android:id="@+id/likesUrl"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postPhotoUrl" />
+
+    <ImageView
+        android:id="@+id/postsUrl"
+        android:layout_width="18dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/likesUrl"
+        app:layout_constraintTop_toBottomOf="@+id/postPhotoUrl" />
+
+    <ImageView
+        android:id="@+id/viewersUrl"
+        android:layout_width="24dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="450dp"
+        android:layout_marginLeft="450dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/postsUrl"
+        app:layout_constraintTop_toBottomOf="@+id/postPhotoUrl" />
+
+    <TextView
+        android:id="@+id/likesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="5K"
+        android:textColor="#979899"
+        app:layout_constraintStart_toEndOf="@+id/likesUrl"
+        app:layout_constraintTop_toTopOf="@+id/likesUrl" />
+
+    <TextView
+        android:id="@+id/postsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="18"
+        android:textColor="#979899"
+        app:layout_constraintStart_toEndOf="@+id/postsUrl"
+        app:layout_constraintTop_toTopOf="@+id/postsUrl" />
+
+    <TextView
+        android:id="@+id/viewersCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="34,9K"
+        android:textColor="#979899"
+        app:layout_constraintStart_toEndOf="@+id/viewersUrl"
+        app:layout_constraintTop_toTopOf="@+id/viewersUrl" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userLike1"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="65dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postPhotoUrl" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userLike2"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="1dp"
+        app:layout_constraintStart_toEndOf="@+id/userLike1"
+        app:layout_constraintTop_toTopOf="@+id/userLike1" />
+    <TextView
+        android:id="@+id/likesDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="6dp"
+        android:text=" Понравилось 1352 людям"
+        android:textColor="#979899"
+        app:layout_constraintStart_toEndOf="@+id/userLike2"
+        app:layout_constraintTop_toTopOf="@+id/userLike2" />
+
+    <TextView
+        android:id="@+id/showCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="Показать ещё 45 комментариев"
+        android:textColor="#4a7cc7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postPhotoUrl" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userComUrl1"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userLike1" />
+
+    <TextView
+        android:id="@+id/userComAcc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:text="Ариан Бака"
+        android:textColor="#4a7cc7"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/userComUrl1"
+        app:layout_constraintTop_toTopOf="@+id/userComUrl1" />
+
+    <TextView
+        android:id="@+id/userComText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="4dp"
+        android:text="Гон, материнская плата мертвая тут"
+        android:textColor="#979899"
+        app:layout_constraintStart_toEndOf="@+id/userComUrl1"
+        app:layout_constraintTop_toBottomOf="@+id/userComAcc1" />
+
+    <TextView
+        android:id="@+id/userComDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:text="вчера в 20:30:50"
+        android:textColor="#979899"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/userComUrl1"
+        app:layout_constraintTop_toBottomOf="@+id/userComText1" />
+
+    <ImageView
+        android:id="@+id/userComReplyUrl1"
+        android:layout_width="14dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userComDate1" />
+
+    <ImageView
+        android:id="@+id/userComLikeUrl1"
+        android:layout_width="14dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:adjustViewBounds="true"
+
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userComReplyUrl1" />
+
+    <TextView
+        android:id="@+id/userComLike1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="9"
+        android:textColor="#979899"
+        app:layout_constraintStart_toEndOf="@+id/userComLikeUrl1"
+        app:layout_constraintTop_toTopOf="@+id/userComLikeUrl1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
