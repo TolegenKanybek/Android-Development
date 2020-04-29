@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202124"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/scientific_btn_ce"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="CE"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_parent_close"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_pi" />
+
+    <Button
+        android:id="@+id/scientific_btn_c"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="C"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_0" />
+
+    <TextView
+        android:id="@+id/scientific_tv_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="30dp"
+        android:autoSizeMinTextSize="20dp"
+        android:background="#202124"
+        android:gravity="right"
+        android:textColor="#174EA6"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_sin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/scientific_tv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="50dp"
+        android:autoSizeMinTextSize="30dp"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#174EA6"
+        android:textSize="50sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_tv_sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/scientific_btn_parent_open"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="("
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_indice"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_ln" />
+
+    <Button
+        android:id="@+id/scientific_btn_sin"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="sin"
+        android:textAllCaps="false"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_fact"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_bs" />
+
+    <Button
+        android:id="@+id/scientific_btn_cos"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="cos"
+        android:textAllCaps="false"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_pi"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_sin" />
+
+    <Button
+        android:id="@+id/scientific_btn_tan"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="tan"
+        android:textAllCaps="false"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_ce"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_cos" />
+
+    <Button
+        android:id="@+id/scientific_btn_pi"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="π"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_parent_open"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_fact" />
+
+    <Button
+        android:id="@+id/scientific_btn_fact"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="!"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_sqrt"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_bs" />
+
+    <Button
+        android:id="@+id/scientific_btn_ln"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="ln"
+        android:textAllCaps="false"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_equal" />
+
+    <Button
+        android:id="@+id/scientific_btn_log"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="log"
+        android:textAllCaps="false"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_indice" />
+
+    <Button
+        android:id="@+id/scientific_btn_sqrt"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="√"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_ln"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_bs" />
+
+    <Button
+        android:id="@+id/scientific_btn_indice"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="^"
+        android:textAllCaps="false"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_ln" />
+
+    <Button
+        android:id="@+id/scientific_btn_parent_close"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text=")"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_log"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_parent_open" />
+
+    <Button
+        android:id="@+id/scientific_btn_bs"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="DEL"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_equal"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_div" />
+
+    <Button
+        android:id="@+id/scientific_btn_9"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="9"
+        android:textAllCaps="false"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_6"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_8" />
+
+    <Button
+        android:id="@+id/scientific_btn_8"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="8"
+        android:textAllCaps="false"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_5"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_7" />
+
+    <Button
+        android:id="@+id/scientific_btn_7"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="7"
+        android:textAllCaps="false"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/scientific_btn_6"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="6"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_3"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_5" />
+
+    <Button
+        android:id="@+id/scientific_btn_3"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="3"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_c"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_2" />
+
+    <Button
+        android:id="@+id/scientific_btn_4"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="4"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/scientific_btn_5"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="5"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_2"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_4" />
+
+    <Button
+        android:id="@+id/scientific_btn_2"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="2"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_0"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_1" />
+
+    <Button
+        android:id="@+id/scientific_btn_1"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="1"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_decimal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/scientific_btn_div"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="÷"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_mul"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_9" />
+
+    <Button
+        android:id="@+id/scientific_btn_sub"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="-"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_add"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_3" />
+
+    <Button
+        android:id="@+id/scientific_btn_add"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="+"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_c" />
+
+    <Button
+        android:id="@+id/scientific_btn_mul"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="×"
+        android:textAllCaps="false"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/scientific_btn_sub"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_9" />
+
+    <Button
+        android:id="@+id/scientific_btn_equal"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="="
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_add" />
+
+    <Button
+        android:id="@+id/scientific_btn_decimal"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="."
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/scientific_btn_0"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#202124"
+        android:fontFamily="@font/rubik_light"
+        android:text="0"
+        android:textColor="#F8FAFD"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scientific_btn_decimal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
